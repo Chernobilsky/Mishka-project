@@ -14,6 +14,7 @@ Then one should just observe that `255*x + 255 (mod 256) == 255*x - 1 (mod 256)`
 **Speaking of cell 10:**
 
 ```python
+>>> x_values = list(range(0, 256, 10))
 >>> def f(x, k):
 ...     return (x, (k*x)%256)
 ...
